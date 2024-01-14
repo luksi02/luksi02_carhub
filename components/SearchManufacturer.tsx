@@ -80,7 +80,8 @@ const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacture
                         {/* Show an active blue background color if the option is selected */}
                         {selected ? (
                           <span className={`absolute inset-y-0 left-0 flex items-center pl-3 ${active? "text-white": "text-pribg-primary-purple"}`}
-                          ></span>
+                          >&quot;</span>
+
                         ) : null}
                       </>
                     )}
