@@ -9,10 +9,11 @@ const Footer = () => (
       <div className='flex flex-col justify-start items-start gap-6'>
         <Image src='/logo.svg' alt='logo' width={118} height={18} className='object-contain' />
         <p className='text-base text-gray-700'>
-          Luksi02's Carhub 2024 <br />
+          Luksi02&apos;s Carhub 2024 <br />
           All Rights Reserved &copy; <br />
           Made for educational purposes.
         </p>
+
       </div>
 
       <div className="footer__links">
@@ -36,7 +37,7 @@ const Footer = () => (
     </div>
 
     <div className='flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10'>
-      <p>@2024 Luksi02's CarHub. All rights reserved. Made for educational purposes.</p>
+      <p>@2024 Luksi02&apos;s CarHub. All rights reserved. Made for educational purposes.</p>
 
       <div className="footer__copyrights-link">
         <Link href="/" className="text-gray-500">
