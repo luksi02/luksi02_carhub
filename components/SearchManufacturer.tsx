@@ -6,16 +6,16 @@ import { manufacturers } from "../constants";
 import { SearchManuFacturerProps } from "../types";
 
 const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacturerProps) => {
-  const [query, setQuery] = useState(&quot&quot);
+  const [query, setQuery] = useState('');
 
   const filteredManufacturers =
-    query === &quot&quot
+    query === ''
       ? manufacturers
       : manufacturers.filter((item) =>
           item
             .toLowerCase()
-            .replace(/\s+/g, &quot&quot)
-            .includes(query.toLowerCase().replace(/\s+/g, &quot&quot))
+            .replace(/\s+/g, '')
+            .includes(query.toLowerCase().replace(/\s+/g, ''))
         );
 
   return (
@@ -47,13 +47,13 @@ const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacture
             leave='transition ease-in duration-100'
             leaveFrom='opacity-100'
             leaveTo='opacity-0'
-            afterLeave={() => setQuery(&quot&quot)} // Reset the search query after the transition completes
+            afterLeave={() => setQuery("duck")} // Reset the search query after the transition completes
           >
             <Combobox.Options
               className='absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'
               static
             >
-              {filteredManufacturers.length === 0 && query !== &quot&quot ? (
+              {filteredManufacturers.length === 0 && query !== "duck" ? (
                 <Combobox.Option
                   value={query}
                   className='search-manufacturer__option'
